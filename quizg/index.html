@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or SignUp</title>
+    <link rel="icon" href="./images/BigIconB.png" type="image/png">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1> WORLD QUIZ HUNTER</h1>
+            <div class="textQ">
+                <h3>Welcome</h3>
+            <p>Are you ready to embark on an exciting journey across the globe? Join us as we test your knowledge of the world's flags and continents!
+            This quiz is designed for explorers, travelers, and trivia enthusiasts alike.</p>
+            <p><span>Flags of the World:</span> Flags are not just colorful pieces of cloth; they represent the rich history, culture, and identity of nations. 
+                From the striking red of Japan's rising sun to the vibrant green of Brazil's lush landscape, each flag tells a unique story. Can you identify them all?</p>
+            <p><span>Continents:</span> Our planet is divided into seven continents, each with its own diverse ecosystems, cultures, and landmarks. Whether it's the vast savannahs of 
+                Africa or the icy landscapes of Antarctica, understanding these regions is key to appreciating our world.</p> 
+            </div>
+        </div>
+        <div class="right">
+            <div id="loginForm">
+                <h2>Login</h2>
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <p class="fpass">Forgot Password?</p>
+                <div id="loginMessage"></div>
+                <button id="loginBtn">Log In</button>
+                <p class="switch-link">Don't have an account? <span id="toSignup">Sign Up</span> </p>
+            </div>
+            <div id="signupForm">
+                <h2>Sign Up</h2>
+                <input type="email" id="signupEmail" placeholder="Email" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                <p class="fpass">Forgot Password?</p>
+                <div id="signupMessage"></div>
+                <button id="signupBtn">Sign Up</button>
+                <p class="switch-link">Already have an account?<span id="toLogin"> Log In</span></p>
+            </div>
+            
+        </div>
+    </div>
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

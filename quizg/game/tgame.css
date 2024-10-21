@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #282c34;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+.gameSection h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #61dafb;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+.gameSection {
+    border: 2px solid #61dafb;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #20232a;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative; 
+}
+
+.quit-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5em;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#continentFlag, #flag {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    border: 3px solid #61dafb;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+#continentFlag:hover, #flag:hover {
+    transform: scale(1.05);
+}
+
+h3 {
+    font-size: 1.8em;
+    margin: 15px 0;
+    color: #61dafb;
+}
+
+#continentChoices, #inputs {
+    margin-top: 20px;
+}
+
+#continentChoices button, #inputs div {
+    background-color: #61dafb;
+    color: #282c34;
+    padding: 10px;
+    margin: 5px 0; /* Adjusted spacing */
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+#continentChoices div:hover, #inputs div:hover {
+    background-color: #21a1f1;
+}
+
+#inputs {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+#inputs div {
+    flex: 1 1 30%; 
+    margin: 5px; 
+    max-width: 100px; 
+}
+
+#continentResult, #result {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#continentScore, #score, #questionNumb, #questionNumber, #chancesLife, #chancesLeft,#highestFlag {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #61dafb;
+}
+
+.hidden {
+    display: none;
+}
+

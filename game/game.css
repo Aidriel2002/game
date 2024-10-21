@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+.selectGame{
+    background-image: url('../images/bgL.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.selectGame h1 {
+    font-size: 50px;
+    color: #e6ff06;
+    margin-top: 200px;
+    margin-left: 160px;
+    margin-bottom: 40px;
+    font-family: "Press Start 2P", system-ui;
+    animation: moveUpDown 1s infinite alternate;
+}
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px); 
+    }
+}
+
+.selectGame a {
+    color: #acacac;
+    text-decoration: none;
+    margin-left: 180px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    width: 430px;
+    font-family: "Press Start 2P", system-ui;
+    border-radius: 7px;
+    display: flex;
+    transition: .3s;
+}
+
+
+.selectGame a span:hover{
+    color: #686363;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: .3s;
+
+}
+
+
+.hidden {
+    display: none;
+}
+.inputs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.letter-input {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 5px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.letter-input:disabled {
+    background-color: #e0e0e0; 
+}
+
+.letter {
+    display: inline-block;
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.quit-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: #ff0000; 
+    position: absolute; 
+    top: 10px; 
+    right: 10px;
+    z-index: 10; 
+}
